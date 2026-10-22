@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "render-start": "node scripts/migrate.js && node scripts/seed.js && next start -p ${PORT:-3000}"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12",
+    "next": "15.5.28",
+    "nodemailer": "^10.1.1",
+    "pg": "^8.23.1",
+    "qrcode": "^1.5.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.7",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^15.5.28"
+  }
+}
